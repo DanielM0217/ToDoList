@@ -1,0 +1,59 @@
+*{
+    margin: 0px;
+}
+
+:root {
+    --buttonbackground-color: rgb(230, 252, 154);
+}
+/*All Css in regards to NavBar and HR at the top*/
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0; 
+    margin: 0;
+    background-color: #778058;
+}
+
+.navbar li{
+    text-decoration: none;
+    padding: .4em;
+    font-size: 1.5em;
+} 
+/*plan on adding a hover effect to each item on the navbar 
+using --buttonbackground-color also need to choose
+a color scheme that makes sense for full layout VAR would 
+most likely be the easiest to work with.
+Might also try and animate the plus sign next to New List with CSS 
+so would have to find a plus icon
+instead.*/
+
+/*Code correlating to Button on index page*/
+
+
+.centering{
+    display: grid;
+    place-items: center;
+    height: 80vh;
+}
+
+#StartButton{
+    display: block;
+    padding: .5em;
+    padding-left: 2em;
+    padding-right: 2em;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+    background-color: rgba(233, 233, 154, 0);
+    border-radius: .25em;
+    border-style: solid;
+    border-width: 1px;
+    font-size: 1.2em;
+    transition: .5s;
+}
+
+#StartButton:hover{
+    background-color: var(--buttonbackground-color);
+}
